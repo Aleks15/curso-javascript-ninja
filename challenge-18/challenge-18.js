@@ -110,7 +110,7 @@
 
 
 	texto.match(capturaRegex).forEach(function(item){
-		console.log(item.replace(regexReplace, 'O texto dentro da tag "$2" é "$4"'));
+		console.log(item.replace(regexReplace, '$1$2$3O texto dentro da tag "$2" é "$4"$5'));
 	});
 
 
